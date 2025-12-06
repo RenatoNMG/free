@@ -13,29 +13,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.blue),
+      appBar: AppBar(backgroundColor: const Color.fromARGB(255, 3, 98, 177)),
       drawer: Drawer(
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         child: Column(
           children: [
             SizedBox(
               width: double.infinity,
-              child: Card(
-                elevation: 4,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(3),
-                ),
-
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
-                      Icon(Icons.person),
-                      SizedBox(width: 50),
-                      Text("Renato", style: TextStyle(fontSize: 20)),
-                    ],
-                  ),
-                ),
-              ),
+              
             ),
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freelas/modeles/auth/pages/login_page.dart';
 import 'package:freelas/pages/home_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LoginPage(),
       debugShowCheckedModeBanner: false,
     );
   }
