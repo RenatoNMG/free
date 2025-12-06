@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freelas/modeles/auth/pages/login_page.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -60,6 +61,15 @@ class _RegisterPageState extends State<RegisterPage> {
                   style: TextStyle(color: Color.fromARGB(255, 216, 238, 255)),
                 ),
               ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
+              },
+              child: Text("Login"),
             ),
           ],
         ),
